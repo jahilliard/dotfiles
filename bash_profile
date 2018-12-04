@@ -6,8 +6,8 @@ source ~/dotfiles/bash/bash_aliases
 source ~/dotfiles/bash/bash_config
 source ~/dotfiles/bash/bash_rvm
 
-if [ -f ~/dotfiles/bashrc ]; then
-    . ~/dotfiles/bashrc
+if [ -f ~/dotfiles/bash/bashrc ]; then
+    . ~/dotfiles/bash/bashrc
 fi
 
 # ============
