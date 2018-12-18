@@ -1,9 +1,9 @@
 [user]
-	name = profh
-	email = profh@cmu.edu
+	name = Justin Hilliard 
+	email = justin.hilliard@sonos.com
 
 [github]
-	user = profh
+	user = justinhilliardsonos 
 
 [color]
   diff = auto
@@ -32,7 +32,7 @@
 [core]
   pager = less -FRSX
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	excludesfile = /Users/lheimann/.gitignore
+	excludesfile = /Users/justin.hilliard/.gitignore  
 	quotepath = false
 
 [apply]

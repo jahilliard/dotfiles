@@ -1,0 +1,5 @@
+install.packages("tidyverse")
+install.packages("rJava")
+install.packages("RJDBC")
+install.packages("packrat")
+install.packages("shiny")

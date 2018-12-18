@@ -4,10 +4,9 @@ export PATH=/usr/local/git/bin:/usr/local/bin/src:/usr/local/bin:/usr/local/sbin
 # Additional files to add to .bash_profile
 source ~/dotfiles/bash/bash_aliases
 source ~/dotfiles/bash/bash_config
-source ~/dotfiles/bash/bash_rvm
 
-if [ -f ~/dotfiles/bash/bashrc ]; then
-    . ~/dotfiles/bash/bashrc
+if [ -f ~/env ]; then
+    source ~/env
 fi
 
 # ============

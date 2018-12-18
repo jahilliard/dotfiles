@@ -1,8 +1,19 @@
 # Justin's Dotfiles
 
+# Install
 
-Create a symlink to .bash_profile
+Code that sets settings for new computers.  This is a WIP install at own risk.
 ```
-ln -s ~/dotfiles/bash_profile ~/.bash_profile
-ln -s ~/dotfiles/vim/vimrc .vimrc
+git clone https://github.com/jahilliard/dotfiles ~/dotfiles && ~/dotfiles/install.sh
+```
+
+## File Structure
+
+```
+bash/ (defaults for shell)
+vim/ (defaults for vim)
+nvim/ (defaults for nvim)
+git/ (contains git defaults)
+osx/ (OSX specific install)
+tools/ (Builds language specific tools)
 ```

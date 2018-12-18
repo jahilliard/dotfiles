@@ -1,5 +1,5 @@
-export EDITOR='mate -w'
-export GIT_EDITOR="mate -w"
+export EDITOR='tw'
+export GIT_EDITOR="tw"
 export TERM="xterm-color"
 
 untracked ()
