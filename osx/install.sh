@@ -73,6 +73,7 @@ brew cask install --appdir=/Applications textwrangler
 brew cask install --appdir=/Applications sonos
 brew cask install --appdir=/Applications dash
 brew cask install --appdir=/Applications rstudio
+brew cask install --appdir=/Applications slack 
 
 # Remove outdated versions from the cellar.
 brew cleanup
