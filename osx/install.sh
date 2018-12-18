@@ -61,18 +61,18 @@ brew install git
 brew install git-lfs
 
 # Install Applications
-brew cask install atom
-brew cask install dropbox
-brew cask install firefox
-brew cask install google-chrome
-brew cask install spotify
-brew cask install sublime-text3
-brew cask install virtualbox
-brew cask install vlc
-brew cask install dbeaver-community
-brew cask install textwrangler
-brew cask install sonos
-brew cask install dash
+brew cask install --appdir=/Applications atom
+brew cask install --appdir=/Applications firefox
+brew cask install --appdir=/Applications google-chrome
+brew cask install --appdir=/Applications spotify
+brew cask install --appdir=/Applications sublime-text3
+brew cask install --appdir=/Applications virtualbox
+brew cask install --appdir=/Applications vlc
+brew cask install --appdir=/Applications dbeaver-community
+brew cask install --appdir=/Applications textwrangler
+brew cask install --appdir=/Applications sonos
+brew cask install --appdir=/Applications dash
+brew cask install --appdir=/Applications rstudio
 
 # Remove outdated versions from the cellar.
 brew cleanup
