@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# Catch the sudo exception
-if (($EUID != 0)); then
-  if [[ -t 1 ]]; then
-    sudo "$0" "$@"
-  else
-    exec 1>output_file
-    gksu "$0 $@"
-  fi
-  exit
-fi
 
 # Installing python basic tools
 echo "Trying to install pip globally"

@@ -30,3 +30,8 @@ alias cdls='cd $1 && ls'
 # -------------
 # for textWangler
 alias tw='open -a /Applications/TextWrangler.app'
+
+# ------------
+# for nvim 
+# alias vi='nvim'
+# alias vim='nvim'

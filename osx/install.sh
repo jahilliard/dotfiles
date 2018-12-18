@@ -1,13 +1,11 @@
 #!/bin/bash
 
+
 # Install Xcode command line tools
 xcode-select --install
 
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew tap homebrew/science
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -61,6 +59,9 @@ brew install git
 brew install git-lfs
 
 # Install Applications
+brew cask install java
+brew cask install java6
+
 brew cask install --appdir=/Applications atom
 brew cask install --appdir=/Applications firefox
 brew cask install --appdir=/Applications google-chrome
@@ -71,6 +72,7 @@ brew cask install --appdir=/Applications vlc
 brew cask install --appdir=/Applications dbeaver-community
 brew cask install --appdir=/Applications textwrangler
 brew cask install --appdir=/Applications sonos
+brew cask install --appdir-/Applications iterm2
 brew cask install --appdir=/Applications dash
 brew cask install --appdir=/Applications rstudio
 brew cask install --appdir=/Applications slack 

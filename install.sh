@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# Catch the sudo exception
-if (($EUID != 0)); then
-  if [[ -t 1 ]]; then
-    sudo "$0" "$@"
-  else
-    exec 1>output_file
-    gksu "$0 $@"
-  fi
-  exit
-fi
 
 PLATFORM="";
 if [ "$(uname)" == "Darwin" ]; then
@@ -33,21 +23,24 @@ chmod +x ~/dotfiles/osx/install.sh
 chmod +x ~/dotfiles/tools/install.sh
 
 if [ "$PLATFORM" == "osx" ]; then
+	echo " ABOUT TO MAC"
 	# Install osx tweaks (and homebrew)
 	cd osx && ./install.sh
 	cd ..
 fi
 
+
 # Install tools directory
 cd tools && ./install.sh
 cd ..
 
-# Finish setup
-vim +PluginInstall +qall
-
 # Create Symlinks for load files
 ln -s ~/dotfiles/bash/bash_profile ~/.bash_profile
-ln -s ~/dotfiles/vim/vimrc .vimrc
+ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfiles/git/.gitignore ~/.gitignore
 ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+
+# Finish setup
+vim +PluginInstall +qall
+
