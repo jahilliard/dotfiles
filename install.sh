@@ -29,6 +29,9 @@ fi
 mkdir -p bin
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+chmod +x ~/dotfiles/osx/install.sh
+chmod +x ~/dotfiles/tools/install.sh
+
 if [ "$PLATFORM" == "osx" ]; then
 	# Install osx tweaks (and homebrew)
 	cd osx && ./install.sh
