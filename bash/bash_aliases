@@ -33,5 +33,10 @@ alias tw='open -a /Applications/TextWrangler.app'
 
 # ------------
 # for nvim 
-# alias vi='nvim'
-# alias vim='nvim'
+alias vi='nvim'
+alias vim='nvim'
+
+# ------------
+# for python
+alias py3='python3'
+
