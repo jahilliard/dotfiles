@@ -53,6 +53,7 @@ brew install grep
 brew install openssh
 brew install pyenv
 brew install r
+brew install fzf
 
 # Install other useful binaries.
 brew install git
@@ -60,6 +61,7 @@ brew install git-lfs
 
 # Install Applications
 brew cask install java
+brew cask install eclipse-jee
 brew cask install java6
 
 brew cask install --appdir=/Applications atom
@@ -72,7 +74,7 @@ brew cask install --appdir=/Applications vlc
 brew cask install --appdir=/Applications dbeaver-community
 brew cask install --appdir=/Applications textwrangler
 brew cask install --appdir=/Applications sonos
-brew cask install --appdir-/Applications iterm2
+brew cask install --appdir=/Applications iterm2
 brew cask install --appdir=/Applications dash
 brew cask install --appdir=/Applications rstudio
 brew cask install --appdir=/Applications slack 

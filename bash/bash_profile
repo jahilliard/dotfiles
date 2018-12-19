@@ -1,7 +1,7 @@
 export PATH=/usr/local/git/bin:/usr/local/bin/src:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:~/bin:$PATH
 
 # link to the main python virtualenv
-source ~/dotfiles/env/bin/activate
+source ~/dotfiles/tools/env/bin/activate
 
 # ============
 # Additional files to add to .bash_profile
