@@ -54,6 +54,9 @@ brew install openssh
 brew install pyenv
 brew install r
 brew install fzf
+brew install libgit2
+brew install eibxml2
+brew install tree
 
 # Install other useful binaries.
 brew install git
@@ -68,7 +71,7 @@ brew cask install --appdir=/Applications atom
 brew cask install --appdir=/Applications firefox
 brew cask install --appdir=/Applications google-chrome
 brew cask install --appdir=/Applications spotify
-brew cask install --appdir=/Applications sublime-text3
+brew cask install --appdir=/Applications sublime-text
 brew cask install --appdir=/Applications virtualbox
 brew cask install --appdir=/Applications vlc
 brew cask install --appdir=/Applications dbeaver-community

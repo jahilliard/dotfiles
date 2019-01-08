@@ -103,3 +103,6 @@ endif
 let g:rout_follow_colorscheme = 1
 " R commands in R output are highlighted
 let g:Rout_more_colors = 1
+
+" set local leader to space
+let maplocalleader="\<space>"

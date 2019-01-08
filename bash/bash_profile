@@ -28,6 +28,7 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:/Users/justin.hilliard/gcloud/google-cloud-sdk/bin:$PATH"
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
 eval "$(pyenv init -)"
 
 function aws_switch_profile() {
