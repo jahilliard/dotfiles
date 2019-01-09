@@ -58,6 +58,8 @@ brew install fzf
 brew install libgit2
 brew install eibxml2
 brew install tree
+brew reinstall cask
+brew cask install --appdir=/Applications caffeine
 
 # Install other useful binaries.
 brew install git
