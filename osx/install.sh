@@ -70,6 +70,8 @@ brew cask install java
 brew cask install eclipse-jee
 brew cask install java6
 
+brew tap caskroom/cask
+brew cask install google-cloud-sdk
 brew cask install --appdir=/Applications atom
 brew cask install --appdir=/Applications firefox
 brew cask install --appdir=/Applications google-chrome
