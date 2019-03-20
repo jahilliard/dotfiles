@@ -60,6 +60,7 @@ brew install eibxml2
 brew install tree
 brew reinstall cask
 brew install tmux
+brew install reattach-to-user-namespace
 brew cask install --appdir=/Applications caffeine
 
 # Install other useful binaries.

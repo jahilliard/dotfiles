@@ -106,3 +106,46 @@ let g:Rout_more_colors = 1
 
 " set local leader to space
 let maplocalleader="\<space>"
+
+" make mouse work
+set mouse=a
+
+" set number lines 
+set number
+
+"use python indentation style and syntax highlighting for python
+autocmd FileType py set tabstop=4
+autocmd FileType py set shiftwidth=4
+autocmd FileType py set expandtab
+autocmd FileType py setf python
+
+" Set to auto read when a file is changed from the outside
+set autoread
+
+" When vimrc is edited, reload it
+autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
+
+"Ignore case when searching
+set ignorecase 
+set smartcase
+
+"Highlight search things
+set hlsearch 
+
+"limit text lines to 80 characters. Will create new line when this is exceeded.
+set textwidth=80 
+
+"searches as you enter search string
+set incsearch
+
+"remove visual bell (ie annoying flashing)
+set vb t_vb=
+
+"show the current row and column at the bottom of the screen
+set ruler
+
+"will wrap lines longer than 80 char to new visual line
+set wrap
+
+"clear search with crtl-L
+autocmd InsertEnter * :let @/=""
