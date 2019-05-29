@@ -59,6 +59,7 @@ brew install libgit2
 brew install eibxml2
 brew install tree
 brew reinstall cask
+brew install postgres
 brew install tmux
 brew install reattach-to-user-namespace
 brew install cmake
