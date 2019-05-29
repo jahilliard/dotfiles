@@ -61,6 +61,10 @@ brew install tree
 brew reinstall cask
 brew install tmux
 brew install reattach-to-user-namespace
+brew install cmake
+brew install apache-arrow
+brew install postgresql
+brew install mysql
 brew cask install --appdir=/Applications caffeine
 
 # Install other useful binaries.

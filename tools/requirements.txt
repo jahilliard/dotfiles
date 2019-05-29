@@ -1,3 +1,6 @@
 mitmproxy
 neovim
 gcloud
+jupyter
+pandas
+tensorflow
