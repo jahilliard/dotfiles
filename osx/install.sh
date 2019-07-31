@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin
+
 
 # Install Xcode command line tools
 xcode-select --install
