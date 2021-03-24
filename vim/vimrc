@@ -13,10 +13,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'jalvesaq/Nvim-R'
 Plugin 'tpope/vim-fugitive'
 Plugin 'rizzatti/dash.vim'
-Plugin 'w0rp/ale'
 Plugin 'itchyny/lightline.vim'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'scrooloose/nerdtree'
@@ -25,10 +23,6 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'ncm2/ncm2'
-Plugin 'roxma/nvim-yarp'
-Plugin 'gaalcaras/ncm-R'
-Plugin 'sirver/UltiSnips'
 Plugin 'chrisbra/csv.vim'
 
 " All of your Plugins must be added before the following line
@@ -36,7 +30,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " enable ncm2 for all buffers
-autocmd BufEnter * call ncm2#enable_for_buffer()
+" autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANTE: :help Ncm2PopupOpen for more information
 set completeopt=noinsert,menuone,noselect
