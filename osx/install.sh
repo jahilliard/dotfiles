@@ -82,20 +82,21 @@ brew cask install java6
 
 brew tap caskroom/cask
 brew cask install google-cloud-sdk
-brew cask install --appdir=/Applications atom
 brew cask install --appdir=/Applications firefox
 brew cask install --appdir=/Applications google-chrome
 brew cask install --appdir=/Applications spotify
 brew cask install --appdir=/Applications sublime-text
 brew cask install --appdir=/Applications virtualbox
 brew cask install --appdir=/Applications vlc
-brew cask install --appdir=/Applications dbeaver-community
-brew cask install --appdir=/Applications textwrangler
 brew cask install --appdir=/Applications sonos
 brew cask install --appdir=/Applications iterm2
 brew cask install --appdir=/Applications dash
 brew cask install --appdir=/Applications rstudio
+brew cask install --appdir=/Applications 1password
 brew cask install --appdir=/Applications slack 
+brew cask install --appdir=/Applications zoom 
+brew cask install --appdir=/Applications airtable 
+brew cask install --appdir=/Applications notion
 
 # Remove outdated versions from the cellar.
 brew cleanup

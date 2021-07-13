@@ -1,5 +1,5 @@
-export EDITOR='tw'
-export GIT_EDITOR="tw"
+export EDITOR='nvim'
+export GIT_EDITOR="nvim"
 export TERM="xterm-color"
 
 untracked ()

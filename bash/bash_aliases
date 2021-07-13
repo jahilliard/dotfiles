@@ -40,3 +40,5 @@ alias vim='nvim'
 # for python
 alias py3='python3'
 
+# -----------
+alias cdsbar='cd ~/Documents/2021/staffbar/product/staffbar-mono'
