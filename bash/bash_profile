@@ -107,9 +107,3 @@ if [ -f '/Users/justinhilliard/google-cloud-sdk/completion.bash.inc' ]; then . '
 # Set GCP cloud permissions
 export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.sharethat/gcp/share-309904-277fe7130382.json"
 
-
-#### FIG ENV VARIABLES ####
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
-
-
