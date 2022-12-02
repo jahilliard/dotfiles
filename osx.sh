@@ -1,13 +1,10 @@
 #!/bin/bash
 
-sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/sbin
-
-
 # Install Xcode command line tools
 xcode-select --install
 
 # Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -28,10 +25,10 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install Bash 4.
 brew install bash
-brew install bash-completion2
+brew install bash-completion@2
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
@@ -40,7 +37,7 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install xquart for R and Graphing
 brew install Caskroom/cask/xquartz
@@ -49,7 +46,7 @@ brew install Caskroom/cask/xquartz
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim 
 brew install python
 brew install unixodbc
 brew install nvim
@@ -63,13 +60,20 @@ brew install eibxml2
 brew install tree
 brew reinstall cask
 brew install postgres
-brew install tmux
 brew install reattach-to-user-namespace
 brew install cmake
 brew install apache-arrow
 brew install postgresql
 brew install mysql
-brew cask install --appdir=/Applications caffeine
+
+# install nvm and create dir
+brew install nvm
+mkdir ~/.nvm
+nvm install-latest-npm
+nvm install --lts
+
+npm install --global yarn
+
 
 # Install other useful binaries.
 brew install git
@@ -77,26 +81,26 @@ brew install git-lfs
 
 # Install Applications
 brew cask install java
-brew cask install eclipse-jee
-brew cask install java6
 
 brew tap caskroom/cask
-brew cask install google-cloud-sdk
-brew cask install --appdir=/Applications firefox
-brew cask install --appdir=/Applications google-chrome
-brew cask install --appdir=/Applications spotify
-brew cask install --appdir=/Applications sublime-text
-brew cask install --appdir=/Applications virtualbox
-brew cask install --appdir=/Applications vlc
-brew cask install --appdir=/Applications sonos
-brew cask install --appdir=/Applications iterm2
-brew cask install --appdir=/Applications dash
-brew cask install --appdir=/Applications rstudio
-brew cask install --appdir=/Applications 1password
-brew cask install --appdir=/Applications slack 
-brew cask install --appdir=/Applications zoom 
-brew cask install --appdir=/Applications airtable 
-brew cask install --appdir=/Applications notion
+
+brew install --cask --appdir=/Applications google-chrome
+brew install --cask --appdir=/Applications spotify
+brew install --cask --appdir=/Applications sublime-text
+brew install --cask --appdir=/Applications iterm2
+brew install --cask --appdir=/Applications rstudio
+brew install --cask --appdir=/Applications 1password
+brew install --cask --appdir=/Applications slack 
+brew install --cask --appdir=/Applications zoom 
+brew install --cask --appdir=/Applications airtable 
+brew install --cask --appdir=/Applications notion
+brew install --cask --appdir=/Applications loom
+brew install --cask --appdir=/Applications superhuman
+brew install --cask --appdir=/Applications visual-studio-code
+brew install --cask --appdir=/Applications discord
+brew install --cask --appdir=/Applications cron
+brew install --cask --appdir=/Applications warp 
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
@@ -105,10 +109,14 @@ brew cleanup
 git clone https://github.com/jasonrudolph/keyboard.git ~/.keyboard
 cd ~/.keyboard
 script/setup
-cd ~/dotfiles/osx
+
+cd ~/dotfiles
 
 # create SS Folder
-mkdir ~/Documents/Screenshots
+mkdir -p ~/Documents/Screenshots
+
+# create symlink for useful files like profile photos
+ln -s ~/dotfiles/public/ ~/Desktop/
 
 # Modify Mac settings
 echo "Tweaking Apple Settings"
@@ -123,13 +131,14 @@ defaults write com.apple.screencapture type -string "png"
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=” “
+sudo nvram SystemAudioVolume=""
 #Show Path bar in Finder
 defaults write com.apple.finder ShowPathbar -bool true
 #Show Status bar in Finder
 defaults write com.apple.finder ShowStatusBar -bool true
-# Enable tap touch for trackpad
-defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
-sudo defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-sudo defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-sudo defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+echo "Don't forget to install https://cleanshot.com/"
+echo "Don't forget to install https://apps.apple.com/us/app/paste-clipboard-history-manager/id967805235"
+echo "Don't forget to install https://grain.com/app/signup"
+echo "Don't forget to install https://rize.io/"
+echo "Toggle tap to click"

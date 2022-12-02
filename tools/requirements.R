@@ -1,5 +1,0 @@
-install.packages("tidyverse", repos='http://cran.stat.ucla.edu/')
-install.packages("rJava", repos='http://cran.stat.ucla.edu/')
-install.packages("RJDBC", repos='http://cran.stat.ucla.edu/')
-install.packages("packrat", repos='http://cran.stat.ucla.edu/')
-install.packages("shiny", repos='http://cran.stat.ucla.edu/')
