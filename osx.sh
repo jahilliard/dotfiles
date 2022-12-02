@@ -78,7 +78,6 @@ nvm install --lts
 
 npm install --global yarn
 
-
 # Install other useful binaries.
 brew install git
 brew install git-lfs
