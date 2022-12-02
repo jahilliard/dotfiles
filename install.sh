@@ -21,7 +21,7 @@ ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 mkdir -p ~/.config/nvim/
 ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/dotfiles/git/gitignore ~/.gitignore
-ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
 
 # Finish setup
 vim +PluginInstall +qall
