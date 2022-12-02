@@ -1,4 +1,4 @@
-export PATH=$(brew --prefix)/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 # ============
 # Additional files to add to .bash_profile

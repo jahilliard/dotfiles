@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export PATH=/opt/homebrew/bin:$PATH
+
+sudo xcodebuild -license accept
 # Install Xcode command line tools
 xcode-select --install
 
@@ -11,6 +14,8 @@ brew update
 
 # Upgrade any already-installed formulae.
 brew upgrade
+
+
 
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
@@ -53,7 +58,6 @@ brew install nvim
 brew install grep
 brew install openssh
 brew install pyenv
-brew install r
 brew install fzf
 brew install libgit2
 brew install eibxml2
@@ -80,10 +84,11 @@ brew install git
 brew install git-lfs
 
 # Install Applications
-brew cask install java
+brew install --cask java
 
-brew tap caskroom/cask
+brew tap homebrew/cask
 
+brew install --cask r
 brew install --cask --appdir=/Applications google-chrome
 brew install --cask --appdir=/Applications spotify
 brew install --cask --appdir=/Applications sublime-text
