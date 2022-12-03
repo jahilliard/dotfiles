@@ -111,6 +111,7 @@ brew install --cask --appdir=/Applications discord
 brew install --cask --appdir=/Applications cron
 brew install --cask --appdir=/Applications warp 
 brew install --cask --appdir=/Applications tableplus
+brew install --cask --appdir=/Applications sketch
 
 
 # Switch to using brew-installed bash as default shell

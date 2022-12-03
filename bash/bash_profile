@@ -4,3 +4,4 @@ export PATH=/opt/homebrew/bin:$PATH
 # Additional files to add to .bash_profile
 source ~/dotfiles/bash/bash_config
 source ~/dotfiles/bash/bash_aliases
+source ~/dotfiles/bash/bash_prompt
