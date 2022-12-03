@@ -18,18 +18,12 @@ alias gcod="git checkout dev" # checkout dev branch
 alias gcl="git clone"	# invoking clone command
 alias gb="git branch"	# for branching
 alias gm="git merge"	# for merging
-alias gi="git instaweb --httpd webrick" # to visualize in browser
 alias gl="git gl"			# pretty log (specs in .gitconfig)
-alias gd="git diff"		# diff a file
 
 # --------------
 # for command line
 alias ls="ls -G"
 alias cdls='cd $1 && ls'
-
-# -------------
-# for textWangler
-alias tw='open -a /Applications/TextWrangler.app'
 
 # ------------
 # for nvim 
@@ -40,5 +34,3 @@ alias vim='nvim'
 # for python
 alias py3='python3'
 
-# -----------
-alias cdsbar='cd ~/Documents/2021/staffbar/product/staffbar-mono'

@@ -14,6 +14,20 @@ if [ -z "$PLATFORM" ]; then
 	exit 1
 fi
 
+chmod +x ~/dotfiles/osx.sh
+
+if [ "$PLATFORM" == "osx" ]; then
+	echo ""
+	echo ""
+	echo ""
+	echo "============"
+	echo "Starting Mac Setup Script. "
+	echo "============"
+	echo ""
+	echo ""
+	./osx.sh
+fi
+
 # Create Symlinks for load files
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ln -s ~/dotfiles/bash/bash_profile ~/.bash_profile
@@ -25,10 +39,3 @@ ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
 
 # Finish setup
 vim +PluginInstall +qall
-
-chmod +x ~/dotfiles/osx.sh
-
-if [ "$PLATFORM" == "osx" ]; then
-	echo "Setting up Mac"
-	./osx.sh
-fi

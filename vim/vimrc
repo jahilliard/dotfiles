@@ -18,7 +18,7 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'scrooloose/nerdtree'
-Plugin 'drewtempelmeyer/palenight.vim'
+Plugin 'rebelot/kanagawa.nvim'
 Plugin 'junegunn/fzf.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'git://git.wincent.com/command-t.git'
@@ -79,7 +79,7 @@ vmap ,e <Plug>RESendSelection
 " remap search key
 nmap <silent> <leader>d <Plug>DashSearch<CR>
 
-colorscheme palenight
+colorscheme kanagawa
 if (has("nvim"))
   "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -143,3 +143,4 @@ set wrap
 
 "clear search with crtl-L
 autocmd InsertEnter * :let @/=""
+let g:CommandTPreferredImplementation='lua'
