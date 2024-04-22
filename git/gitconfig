@@ -41,3 +41,5 @@
 [alias]
   co = checkout
   gl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(yellow):%an%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[init]
+	defaultBranch = main

@@ -1,3 +1,5 @@
+echo "HELLO WORLD"
+
 export PATH=/opt/homebrew/bin:$PATH
 
 # ============

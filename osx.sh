@@ -147,13 +147,13 @@ echo "============"
 echo ""
 echo ""
 # create SS Folder
-mkdir -p ~/Documents/Screenshots
+mkdir -p ~/Desktop/Screenshots
 # create symlink for useful files like profile photos
 ln -s ~/dotfiles/public/ ~/Desktop/
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
 # Save screenshots to the Documents/Screenshots
-defaults write com.apple.screencapture location ~/Documents/Screenshots
+defaults write com.apple.screencapture location ~/Desktop/Screenshots
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
 # Display full POSIX path as Finder window title
