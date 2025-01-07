@@ -113,6 +113,7 @@ brew install --cask --appdir=/Applications warp
 brew install --cask --appdir=/Applications tableplus
 brew install --cask --appdir=/Applications sketch
 brew install --cask --appdir=/Applications docker
+brew install --cask --appdir=/Applications bartender
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
