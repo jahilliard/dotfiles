@@ -97,23 +97,22 @@ brew install --cask r
 brew install --cask --appdir=/Applications google-chrome
 brew install --cask --appdir=/Applications spotify
 brew install --cask --appdir=/Applications sublime-text
-brew install --cask --appdir=/Applications iterm2
 brew install --cask --appdir=/Applications rstudio
 brew install --cask --appdir=/Applications 1password
 brew install --cask --appdir=/Applications slack 
 brew install --cask --appdir=/Applications zoom 
 brew install --cask --appdir=/Applications airtable 
-brew install --cask --appdir=/Applications notion
 brew install --cask --appdir=/Applications loom
 brew install --cask --appdir=/Applications superhuman
 brew install --cask --appdir=/Applications visual-studio-code
-brew install --cask --appdir=/Applications discord
-brew install --cask --appdir=/Applications cron
-brew install --cask --appdir=/Applications warp 
+brew install --cask --appdir=/Applications ghostty
 brew install --cask --appdir=/Applications tableplus
-brew install --cask --appdir=/Applications sketch
 brew install --cask --appdir=/Applications docker
 brew install --cask --appdir=/Applications bartender
+brew install --cask --appdir=/Applications figma
+brew install --cask --appdir=/Applications microsoft-office
+brew install --cask --appdir=/Applications chatgpt
+brew install --cask --appdir=/Applications claude
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
@@ -233,9 +232,6 @@ echo "Reminders"
 echo "============"
 echo ""
 echo ""
-echo "Don't forget to install https://cleanshot.com/"
 echo "Don't forget to install https://apps.apple.com/us/app/paste-clipboard-history-manager/id967805235"
-echo "Don't forget to install https://grain.com/app/signup"
-echo "Don't forget to install https://rize.io/"
 echo "Toggle => tap to click"
 echo "Toggle => Automatically hid and show the dock"
