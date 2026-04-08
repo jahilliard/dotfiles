@@ -31,6 +31,7 @@ fi
 # Create Symlinks for load files
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ln -s ~/dotfiles/bash/bash_profile ~/.bash_profile
+ln -s ~/dotfiles/bash/bashrc ~/.bashrc
 ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 mkdir -p ~/.config/nvim/
 ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
